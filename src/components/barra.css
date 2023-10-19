@@ -1,0 +1,23 @@
+/* barra.css */
+.custom-button {
+    margin: 10px;
+    height: 50px;
+    padding: 10px; 
+  }
+  
+  .barra {
+    background-color: #1e2a78;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 300vh; 
+    width: 30%;
+    padding: 20px; 
+  }
+  
+  .custom-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  

@@ -1,18 +1,23 @@
 import React from 'react';
-import { Grid, Button } from '@mui/material';
-
+import { Grid, Button, IconButton } from '@mui/material';
+import MyLocationIcon from '@mui/icons-material/MyLocation';
+import './barra.css';
 
 function Barra() {
   return (
-    <div>
-      <Grid container>
-        <Grid item xs={3} style={{ backgroundColor: '#1e2a78', minHeight: '100vh' }}>
-          <Button variant="contained" className="custom-button" style={{ margin: '10px', }}>Contained</Button>
-        </Grid>
-        <Grid item xs={9}>
-        </Grid>
+    <Grid container>
+      <Grid item xs={3} className="barra">
+        <div className="custom-button-container">
+          <Button variant="contained" className="custom-button">
+            Search for places
+          </Button>
+          <IconButton className="custom-button">
+            <MyLocationIcon />
+          </IconButton>
+        </div>
       </Grid>
-    </div>
+      <Grid item xs={9}></Grid>
+    </Grid>
   );
 }
 
