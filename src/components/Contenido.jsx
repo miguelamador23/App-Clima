@@ -1,9 +1,11 @@
 import React from "react";
 
 function Contenido() {
-    return{
-
-    }
+    return (
+        <>
+            <h1>Hola</h1>
+        </>
+    );
 }
 
-export default Contenido
+export default Contenido;
